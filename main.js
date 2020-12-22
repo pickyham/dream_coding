@@ -1,5 +1,3 @@
-
-
 //added ECMAScript5 
 // for blocking flexibility
 
@@ -11,5 +9,6 @@ console.log('Hello World')
 //a = 6
 
 //no error
-let a 
-a = 6 
+//let a 
+// a = 6 
+
