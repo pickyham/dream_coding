@@ -59,10 +59,43 @@ const size = 17.1
 console.log(`value : ${count}, type: ${typeof count}, hello`)
 console.log(`value : ${size}, type: ${typeof size}, hello`)
 
-// nuber - speicla numeric values : infinity, -infinity, NaN(not a number)
+// number - speicla numeric values : infinity, -infinity, NaN(not a number)
 const infinity = 1 / 0;
 const negativeInfinity = -1/0
 const nAn = 'not a number' / 2;
 console.log(infinity)
 console.log(negativeInfinity)
 console.log(nAn)
+
+//string
+const char = 'c'
+const brendan ='brendan'
+
+//template literals (string)
+const helloBob = `hi ${brendan}!`
+console.log(helloBob)
+
+
+//null
+let nothing = null
+console.log(`value ${nothing}, type : ${typeof nothing}`)
+
+//undefined
+let x; //할당되지 않거나 undefined이라고 준 상태 
+console.log(`value : ${x}, type : ${typeof x}`)
+
+
+//Symbol
+//map 이나 다른 자료구조에서 식별자가 필요할 때,
+//동시다발적으로 일어나는 코드에서 우선순위를 주고 싶을 때,
+//정말 고유한 식별자가 필요할 때 쓰는 함수
+// string은 다른 모듈이나 파일에서 같은 string을 이용할 경우 충돌이 일어날 수 있기 때문에 비추
+const symbol1 = Symbol('id')
+const symbol2 = Symbol('id')
+console.log(symbol1 === symbol2) // false
+
+//동일한 심볼을 만들고 싶다 
+const gSymbol1 = Symbol.for('id')
+const gSymbol2 = Symbol.for('id')
+console.log(gSymbol1 === gSymbol2)  //true
+
