@@ -99,3 +99,20 @@ const gSymbol1 = Symbol.for('id')
 const gSymbol2 = Symbol.for('id')
 console.log(gSymbol1 === gSymbol2)  //true
 
+//symbol()은 바로 출력하면 error
+//항상 .descript이용
+console.log(symbol1.description)
+console.log(symbol1)
+// console.log(`value: ${symbol1}`) //error string 속에 들어가니..
+
+//5. Dynamic typing <-> Statical typing language
+//: run time에 따라 type이 변경 되기 도 함
+
+let text = 'hello';
+console.log(text.charAt(0)) //Returns the character at the specified index.
+ 
+
+//obj - real-life object, data structure
+//function 
+
+//다음 시간에 !
