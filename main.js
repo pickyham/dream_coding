@@ -1,6 +1,8 @@
 
 
 //added ECMAScript5 
+// for blocking flexibility
+
 'use strict';
 
 console.log('Hello World')
